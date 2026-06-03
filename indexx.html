@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+
+      fbq("init", "3852376701725254");
+      fbq("track", "PageView");
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Luna Estética Avançada • Porto Alegre</title>
+    <meta
+      name="description"
+      content="Botox, Preenchimento Labial, Fios PDO e Peelings em Porto Alegre. Agende sua avaliação pelo WhatsApp."
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+      <div class="container">
+        <div class="marca">
+          <img
+            src="imagens/logo.png"
+            alt="Luna Estética Avançada"
+            class="logo"
+          />
+          <strong>LUNA ESTÉTICA AVANÇADA - PORTO ALEGRE</strong>
+        </div>
+        <nav>
+          <a href="#servicos" class="botao">Serviços</a>
+          <a href="#agendamento" class="botao primario">WhatsApp</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <h1>O momento certo para investir em você é agora 💖</h1>
+          <p>
+            Procedimentos seguros com avaliação personalizada e acompanhamento.
+          </p>
+          <div class="acoes">
+            <a class="botao primario" href="#agendamento">Agendar avaliação</a>
+            <a class="botao" href="#servicos">Conhecer serviços</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Serviços -->
+      <section id="servicos" class="servicos container">
+        <article class="cartao">
+          <header>
+            <h2>Botox (Toxina Botulínica)</h2>
+            <p class="copy-destaque">
+              Reduza marcas do tempo com resultados sutis e naturais que
+              valorizam sua beleza
+            </p>
+          </header>
+          <div class="antes-depois unico">
+            <img src="imagens/Botox.jpg" alt="Antes e Depois do botox" />
+          </div>
+          <footer>
+            <small>Reavaliação em até 15 dias quando indicado.</small>
+            <a class="cta" href="#agendamento">Agendar avaliação →</a>
+          </footer>
+        </article>
+
+        <article class="cartao">
+          <header>
+            <h2>Preenchimento Labial</h2>
+            <p class="copy-destaque">
+              Conquiste lábios mais volumosos, hidratados e definidos com
+              naturalidade e segurança
+            </p>
+          </header>
+          <div class="antes-depois unico">
+            <img
+              src="imagens/Preen.Labial.jpg"
+              alt="Antes e Depois do preenchimento labial"
+            />
+          </div>
+          <footer>
+            <small>Ácido hialurônico. Resultado imediato.</small>
+            <a class="cta" href="#agendamento">Agendar avaliação →</a>
+          </footer>
+        </article>
+
+        <article class="cartao">
+          <header>
+            <h2>Fios PDO</h2>
+            <p class="copy-destaque">
+              Estimule o colágeno e devolva firmeza e sustentação ao rosto de
+              forma progressiva
+            </p>
+          </header>
+          <div class="antes-depois unico">
+            <img src="imagens/Lifting.jpg" alt="Antes e Depois dos fios PDO" />
+          </div>
+          <footer>
+            <small>Efeito progressivo nas semanas seguintes.</small>
+            <a class="cta" href="#agendamento">Agendar avaliação →</a>
+          </footer>
+        </article>
+        <article class="cartao">
+          <header>
+            <h2>Peelings</h2>
+            <p class="copy-destaque">
+              Revitalize sua pele, reduza manchas e melhore a textura com
+              protocolos sob medida
+            </p>
+          </header>
+          <div class="antes-depois unico">
+            <img src="imagens/Peeling.jpg" alt="Antes e Depois do peeling" />
+          </div>
+          <footer>
+            <small>Opções químico e enzimático; downtime variável.</small>
+            <a class="cta" href="#agendamento">Agendar avaliação →</a>
+          </footer>
+        </article>
+      </section>
+
+      <!-- Agendamento -->
+      <section id="agendamento" class="container contato">
+        <h2>Agende sua avaliação</h2>
+        <form class="formulario" onsubmit="return enviarWhatsApp(event);">
+          <label>
+            <span>Seu nome</span>
+            <input required id="nome" placeholder="Seu nome" />
+          </label>
+          <label>
+            <span>Serviço</span>
+            <select id="servico">
+              <option>Botox</option>
+              <option>Preenchimento Labial</option>
+              <option>Fios PDO</option>
+              <option>Peelings</option>
+            </select>
+          </label>
+          <label class="linha-inteira">
+            <span>Melhor dia/horário</span>
+            <input id="quando" placeholder="Ex.: próxima terça à tarde" />
+          </label>
+          <button class="botao primario" type="submit">
+            Falar no WhatsApp
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="container rodape">
+      <div>
+        <strong>LUNA ESTÉTICA AVANÇADA - PORTO ALEGRE</strong>
+        <div class="nota">
+          Informações educativas. Resultados variam entre indivíduos.
+        </div>
+      </div>
+      <div>
+        <a id="linkWhatsApp" href="#">WhatsApp</a>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
